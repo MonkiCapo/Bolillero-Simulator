@@ -35,6 +35,7 @@ public class Bolillero : IBolillero
 
         return bolillaSeleccionada;
     }
+    
     public void ReingresarBolillas(List<Bolilla> bolillasAReingresar)
     {
         bolillas.AddRange(bolillasAReingresar);

@@ -10,3 +10,15 @@ C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca
 C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\refint\boliteca.dll
 C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.pdb
 C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\ref\boliteca.dll
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\bin\Debug\net9.0\boliteca.deps.json
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\bin\Debug\net9.0\boliteca.dll
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\bin\Debug\net9.0\boliteca.pdb
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.AssemblyInfoInputs.cache
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.AssemblyInfo.cs
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.csproj.CoreCompileInputs.cache
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.sourcelink.json
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.dll
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\refint\boliteca.dll
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\boliteca.pdb
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\boliteca\obj\Debug\net9.0\ref\boliteca.dll

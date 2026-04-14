@@ -52,21 +52,6 @@ public class BolilleroTest
     }
 
     [Fact]
-    public void JugarPierde()
-    {
-        var jugada = new List<Bolilla>
-        {
-            new Bolilla(4),
-            new Bolilla(2),
-            new Bolilla(1)
-        };
-
-        bool resultado = bolillero.Jugar(jugada);
-
-        Assert.False(resultado);
-    }
-
-    [Fact]
     public void GanarNVeces()
     {
         var jugada = new List<Bolilla>

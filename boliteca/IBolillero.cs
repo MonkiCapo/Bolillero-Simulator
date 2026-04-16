@@ -7,6 +7,6 @@ namespace boliteca
 {
     public interface IBolillero
     {
-        Bolilla obtenerBolilla();
+        int obtenerBolilla();
     }
 }

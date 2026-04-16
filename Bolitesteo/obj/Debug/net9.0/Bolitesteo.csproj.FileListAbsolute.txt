@@ -101,6 +101,12 @@ C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolite
 C:\Users\Noxie-PC\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\ref\Bolitesteo.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\.msCoverageSourceRootsMapping_Bolitesteo
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\CoverletSourceRootsMapping_Bolitesteo
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.csproj.AssemblyReference.cache
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.AssemblyInfoInputs.cache
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.AssemblyInfo.cs
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.csproj.CoreCompileInputs.cache
+C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.sourcelink.json
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\testhost.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\xunit.abstractions.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\testhost.exe
@@ -188,12 +194,6 @@ C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\zh-H
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\boliteca.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\bin\Debug\net9.0\boliteca.pdb
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.csproj.AssemblyReference.cache
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.AssemblyInfoInputs.cache
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.AssemblyInfo.cs
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.csproj.CoreCompileInputs.cache
-C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.sourcelink.json
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.csproj.Up2Date
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\Bolitesteo.dll
 C:\Users\Lab15-PC01\Desktop\Bolillero-Simulator\Bolitesteo\obj\Debug\net9.0\refint\Bolitesteo.dll

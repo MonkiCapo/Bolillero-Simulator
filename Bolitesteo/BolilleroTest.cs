@@ -19,7 +19,7 @@ public class BolilleroTest
     {
         var bolilla = bolillero.obtenerBolilla();
 
-        Assert.Equal(0, bolilla.NumeroBolilla);
+        Assert.Equal(0, bolilla);
         Assert.Equal(9, bolillero.bolillas.Count);
         Assert.Single(bolillero.BolillasExtraidas);
     }
@@ -29,7 +29,7 @@ public class BolilleroTest
     {
         var bolilla = bolillero.obtenerBolilla();
 
-        bolillero.ReingresarBolillas(new List<Bolilla> { bolilla });
+        bolillero.ReingresarBolillas(new List<int> { bolilla });
 
         Assert.Equal(10, bolillero.bolillas.Count);
         Assert.Empty(bolillero.BolillasExtraidas);
@@ -38,13 +38,7 @@ public class BolilleroTest
     [Fact]
     public void JugarGana()
     {
-        var jugada = new List<Bolilla>
-        {
-            new Bolilla(0),
-            new Bolilla(1),
-            new Bolilla(2),
-            new Bolilla(3)
-        };
+        var jugada = new List<int>{0, 1, 2, 3};
 
         bool resultado = bolillero.Jugar(jugada);
 
@@ -52,13 +46,19 @@ public class BolilleroTest
     }
 
     [Fact]
+    public void JugarPierde()
+    {
+        var jugada = new List<int>{4, 2, 1, 0};
+
+        bool resultado = bolillero.Jugar(jugada);
+
+        Assert.False(resultado);
+    }
+
+    [Fact]
     public void GanarNVeces()
     {
-        var jugada = new List<Bolilla>
-        {
-            new Bolilla(0),
-            new Bolilla(1)
-        };
+        var jugada = new List<int>{0, 1};
 
         int resultado = bolillero.JugarNVeces(jugada, 1);
 

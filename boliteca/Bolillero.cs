@@ -8,27 +8,27 @@ namespace boliteca;
 public class Bolillero : IBolillero
 {
     public int CantidadAJugar { get; set; }
-    public List<Bolilla> bolillas { get; set; }
-    public List<Bolilla> BolillasExtraidas { get; set; }
+    public List<int> bolillas { get; private set; }
+    public List<int> BolillasExtraidas { get; private set; }
     private IRandomBolilla randomBolilla;
 
     public Bolillero(int CantidadAJugar, IRandomBolilla randomBolilla)
     {
-        bolillas = new List<Bolilla>();
-        BolillasExtraidas = new List<Bolilla>();
+        bolillas = new List<int>();
+        BolillasExtraidas = new List<int>();
         this.CantidadAJugar = CantidadAJugar;
         this.randomBolilla = randomBolilla;
 
         for (int i = 0; i <= CantidadAJugar; i++)
         {
-            bolillas.Add(new Bolilla(i));
+            bolillas.Add(i);
         }
     }
 
-    public Bolilla obtenerBolilla()
+    public int obtenerBolilla()
     {
         int indice = randomBolilla.Next(0, bolillas.Count);
-        Bolilla bolillaSeleccionada = bolillas[indice];
+        int bolillaSeleccionada = bolillas[indice];
 
         bolillas.RemoveAt(indice);
         BolillasExtraidas.Add(bolillaSeleccionada);
@@ -36,7 +36,7 @@ public class Bolillero : IBolillero
         return bolillaSeleccionada;
     }
     
-    public void ReingresarBolillas(List<Bolilla> bolillasAReingresar)
+    public void ReingresarBolillas(List<int> bolillasAReingresar)
     {
         bolillas.AddRange(bolillasAReingresar);
 
@@ -46,16 +46,16 @@ public class Bolillero : IBolillero
         }
     }
 
-    public bool Jugar(List<Bolilla> jugada)
+    public bool Jugar(List<int> jugada)
     {
-        List<Bolilla> bolillasExtraidas = new List<Bolilla>();
+        List<int> bolillasExtraidas = new List<int>();
 
         foreach (var bolilla in jugada)
         {
-            Bolilla sacada = obtenerBolilla();
+            int sacada = obtenerBolilla();
             bolillasExtraidas.Add(sacada);
 
-            if (sacada.NumeroBolilla != bolilla.NumeroBolilla)
+            if (sacada != bolilla)
             {
                 ReingresarBolillas(bolillasExtraidas);
                 return false;
@@ -65,7 +65,7 @@ public class Bolillero : IBolillero
         return true;
     }
 
-    public int JugarNVeces(List<Bolilla> jugada, int cantidadJugar)
+    public int JugarNVeces(List<int> jugada, int cantidadJugar)
     {
         int aciertos = 0;
 

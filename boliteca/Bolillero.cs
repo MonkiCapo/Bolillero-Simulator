@@ -25,6 +25,16 @@ public class Bolillero : IBolillero
         }
     }
 
+    public Bolillero Clone()
+    {
+        Bolillero clon = new Bolillero(this.CantidadAJugar, this.randomBolilla);
+
+        clon.bolillas = new List<int>(this.bolillas);
+        clon.BolillasExtraidas = new List<int>(this.BolillasExtraidas);
+
+        return clon;
+    }
+
     public int obtenerBolilla()
     {
         int indice = randomBolilla.Next(0, bolillas.Count);

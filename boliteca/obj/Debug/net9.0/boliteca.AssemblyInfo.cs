@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("boliteca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+220ce6a85fb6e79bfd58034724a0d49f9fa3d02f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d7bde7efa0fedd61dcc9545e3156e95d5162534")]
 [assembly: System.Reflection.AssemblyProductAttribute("boliteca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("boliteca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

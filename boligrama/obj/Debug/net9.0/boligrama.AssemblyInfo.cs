@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Bolitesteo")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("boligrama")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d7bde7efa0fedd61dcc9545e3156e95d5162534")]
-[assembly: System.Reflection.AssemblyProductAttribute("Bolitesteo")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Bolitesteo")]
+[assembly: System.Reflection.AssemblyProductAttribute("boligrama")]
+[assembly: System.Reflection.AssemblyTitleAttribute("boligrama")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

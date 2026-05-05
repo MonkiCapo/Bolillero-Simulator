@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("boligrama")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1bced4aadcc56240a267cd731940482192f83c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f28661f2b895ec558c06b70f6855eb4ad67cbcaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("boligrama")]
 [assembly: System.Reflection.AssemblyTitleAttribute("boligrama")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

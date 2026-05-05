@@ -45,10 +45,13 @@ public class Bolillero : IBolillero
 
     public Bolillero Clone()
     {
-        Bolillero clon = new Bolillero(CantidadAJugar, randomBolilla, false);
+        Bolillero clon = new Bolillero(CantidadAJugar, randomBolilla, false)
+        {
 
-        clon.bolillas = new List<int>(bolillas);
-        clon.BolillasExtraidas = new List<int>(BolillasExtraidas);
+        bolillas = new List<int>(bolillas),
+        BolillasExtraidas = new List<int>(BolillasExtraidas)
+        
+        };
 
         return clon;
     }

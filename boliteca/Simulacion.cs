@@ -42,9 +42,24 @@ namespace boliteca
             return resultados.Sum();
         }
 
-        public Task<long> simularSinHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion)
+        public async Task<long> simularConHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion, int cantidadHilos)
         {
-            
+            var tareas = new List<Task<long>>();
+
+            int baseCantidad = CantidadSimulacion / cantidadHilos;
+            int resto = CantidadSimulacion % cantidadHilos;
+
+            for (int i = 0; i < cantidadHilos; i++)
+            {
+                int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
+
+                tareas.Add(Task.Run(() =>
+                    simularSinHilos(bolillero.Clone(), jugada, cantidadParaEsteHilo)
+                ));
+            }
+
+            var resultados = await Task.WhenAll(tareas);
+            return resultados.Sum();
         }
     }
 }

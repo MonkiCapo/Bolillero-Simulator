@@ -41,5 +41,10 @@ namespace boliteca
             var resultados = Task.WhenAll(tareas).Result;
             return resultados.Sum();
         }
+
+        public Task<long> simularSinHilosAsync(Bolillero bolillero, List<int> jugada, int CantidadSimulacion)
+        {
+            
+        }
     }
 }

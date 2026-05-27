@@ -1,7 +1,7 @@
-﻿using Xunit;
+using Xunit;
 using boliteca;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace Bolitesteo;
 
@@ -63,5 +63,63 @@ public class BolilleroTest
         int resultado = bolillero.JugarNVeces(jugada, 1);
 
         Assert.Equal(1, resultado);
+    }
+
+    [Fact]
+    public void ClonadoExitosamente()
+    {
+        var bolillero = new Bolillero(9, new Primero());
+        bolillero.obtenerBolilla();
+
+        var clone = bolillero.Clone();
+
+        Assert.Equal(bolillero.bolillas.Count, clone.bolillas.Count);
+        Assert.Equal(bolillero.BolillasExtraidas.Count, clone.BolillasExtraidas.Count);
+        Assert.Equal(bolillero.bolillas, clone.bolillas);
+        Assert.Equal(bolillero.BolillasExtraidas, clone.BolillasExtraidas);
+    }
+
+    [Theory]
+    [InlineData(5)]
+    [InlineData(10)]
+    [InlineData(100)]
+    public void SimularSinHilos_DevuelveUnResultadoValido(int cantidadSimulacion)
+    {
+        var bolillero = new Bolillero(9, new Primero());
+        var simulacion = new Simulacion();
+        var jugada = new List<int> { 0, 1 };
+
+        long resultado = simulacion.simularSinHilos(bolillero, jugada, cantidadSimulacion);
+
+        Assert.InRange(resultado, 0, cantidadSimulacion);
+    }
+
+    [Theory]
+    [InlineData(5, 2)]
+    [InlineData(10, 4)]
+    [InlineData(100, 10)]
+    public void SimularConHilos_DevuelveUnResultadoValido(int cantidadSimulacion, int cantidadHilos)
+    {
+        var bolillero = new Bolillero(9, new Primero());
+        var simulacion = new Simulacion();
+        var jugada = new List<int> { 0, 1 };
+
+        long resultado = simulacion.SimularConHilos(bolillero, jugada, cantidadSimulacion, cantidadHilos);
+
+        Assert.InRange(resultado, 0, cantidadSimulacion);
+    }
+
+    [Theory]
+    [InlineData(5, 2)]
+    [InlineData(10, 4)]
+    [InlineData(100, 10)]
+    public async Task SimularConHilosAsync_DevuelveUnResultadoValido(int cantidadSimulacion, int cantidadHilos)
+    {
+        var bolillero = new Bolillero(9, new Primero());
+        var simulacion = new Simulacion();
+        var jugada = new List<int> { 0, 1 };
+        long resultado = await simulacion.simularConHilosAsync(bolillero, jugada, cantidadSimulacion, cantidadHilos);
+
+        Assert.InRange(resultado, 0, cantidadSimulacion);
     }
 }

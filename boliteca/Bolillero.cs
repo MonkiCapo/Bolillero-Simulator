@@ -12,17 +12,48 @@ public class Bolillero : IBolillero
     public List<int> BolillasExtraidas { get; private set; }
     private IRandomBolilla randomBolilla;
 
-    public Bolillero(int CantidadAJugar, IRandomBolilla randomBolilla)
+    public Bolillero(int cantidadAJugar, IRandomBolilla randomBolilla)
     {
+        CantidadAJugar = cantidadAJugar;
+        this.randomBolilla = randomBolilla;
+
         bolillas = new List<int>();
         BolillasExtraidas = new List<int>();
-        this.CantidadAJugar = CantidadAJugar;
-        this.randomBolilla = randomBolilla;
 
         for (int i = 0; i <= CantidadAJugar; i++)
         {
             bolillas.Add(i);
         }
+    }
+
+    private Bolillero(int cantidadAJugar, IRandomBolilla randomBolilla, bool cargarBolillas)
+    {
+        CantidadAJugar = cantidadAJugar;
+        this.randomBolilla = randomBolilla;
+
+        bolillas = new List<int>();
+        BolillasExtraidas = new List<int>();
+
+        if (cargarBolillas)
+        {
+            for (int i = 0; i <= CantidadAJugar; i++)
+            {
+                bolillas.Add(i);
+            }
+        }
+    }
+
+    public Bolillero Clone()
+    {
+        Bolillero clon = new Bolillero(CantidadAJugar, randomBolilla, false)
+        {
+
+        bolillas = new List<int>(bolillas),
+        BolillasExtraidas = new List<int>(BolillasExtraidas)
+        
+        };
+
+        return clon;
     }
 
     public int obtenerBolilla()

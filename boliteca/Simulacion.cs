@@ -40,5 +40,24 @@ namespace boliteca
 
             return resultados.Sum();
         }
+
+        public async Task<long> SimularParallelAsync(Bolillero bolillero, List<int> jugada, int cantidadSimulacion, int cantidadHilos)
+        {
+            int baseCantidad = cantidadSimulacion / cantidadHilos;
+            int resto = cantidadSimulacion % cantidadHilos;
+            var resultados = new long[cantidadHilos];
+
+            await Task.Run(() =>
+            {
+                Parallel.For(0, cantidadHilos, i =>
+                {
+                    int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
+                    
+                    resultados[i] = simularSinHilos(bolillero.Clone(), jugada, cantidadParaEsteHilo);
+                });
+            });
+
+            return resultados.Sum();
+        }
     }
 }

@@ -53,7 +53,8 @@ namespace boliteca
                 {
                     int cantidadParaEsteHilo = baseCantidad + (i < resto ? 1 : 0);
                     
-                    resultados[i] = simularSinHilos(bolillero.Clone(), jugada, cantidadParaEsteHilo);
+                    //resultados[i] = simularSinHilos(bolillero.Clone(), jugada, cantidadParaEsteHilo);
+                    resultados[i] = bolillero.Clone().JugarNVeces(jugada, cantidadParaEsteHilo);
                 });
             });
 
